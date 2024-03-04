@@ -1,8 +1,12 @@
+body{
+    background-image: url('./imagens/wallpaper004.jpg');
+}
+
 .quadrado{
     display: inline-block;
     border: 1px solid #000000;
     border-radius: 10px;
-    background-color: teal;
+    background-color: #00ffff;
     width: 200px;
     height: 200px;
 }
@@ -16,6 +20,5 @@ div#q2{
 }
 
 div#q3{
-    background-image: url('./imagens/pattern003.png');
-
+    background-image: url('./imagens/pattern004.png')
 }
