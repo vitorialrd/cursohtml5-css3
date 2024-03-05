@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Notas</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            color: #ffffff;
+            background-color: #184118;
+            font-weight: bolder;
+            text-decoration: underline;
+            padding: 10px;
+        }
+
+        .titulo,
+        .media {
+            color: #ffffff;
+            background-color: #5ec25e;
+        }
+
+        .tituloM {
+            color: #ffffff;
+            background-color: #5ec25e;
+            text-align: left;
+        }
+
+        th,
+        td {
+            border: 1px solid gray;
+        }
+
+        .nota {
+            text-align: center;
+        }
+
+        .media {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Tabela de Notas</caption>
+        <thead>
+            <tr class="titulo">
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Diciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Médias</th>
+            </tr>
+            <tr class="titulo">
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="nota">6.0</td>
+                <td class="nota">7.0</td>
+                <td class="nota">00</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nota">6.5</td>
+                <td class="nota">4.0</td>
+                <td class="nota">00</td>
+            </tr>
+            <tr>
+                <td>Química</td>
+                <td class="nota">8.5</td>
+                <td class="nota">7.0</td>
+                <td class="nota">00</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nota">5.0</td>
+                <td class="nota">6.5</td>
+                <td class="nota">00</td>
+            </tr>
+
+            <tr>
+                <th scope="row" class="tituloM" colspan="4">Média de Exatas</th>
+                <td class="media">00</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="nota">5.0</td>
+                <td class="nota">6.0</td>
+                <td class="nota">00</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nota">5.0</td>
+                <td class="nota">6.0</td>
+                <td class="nota">00</td>
+            </tr>
+            <tr>
+                <th scope="row" class="tituloM" colspan="4">Média de Humanas</th>
+                <td class="media">00</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
