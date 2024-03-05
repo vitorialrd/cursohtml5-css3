@@ -16,6 +16,9 @@
             border: 1px solid black;
             padding: 2px;
         }
+        tbody > tr:nth-child(odd){
+            background-color: rgb(241, 226, 202);
+        }
         td.num{
             text-align: right;
         }
@@ -30,14 +33,14 @@
     <table>
         <thead>
             <tr>
-                <th>State</th>
-                <th>Population</th>
+                <th scope="col">State</th>
+                <th scope="col">Population</th>
             </tr>
             
         </thead>
         <tbody>
             <tr>
-                <td>São Paulo</td>
+                <td >São Paulo</td>
                 <td class="num">44 441 238</td>
             </tr>
 
@@ -60,11 +63,31 @@
                 <td>Paraná</td>
                 <td class="num">11 444 380</td>
             </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10 882 965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 058 931</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">8 794 957</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8 121 025</td>
+            </tr>
+            <tr>
+                <td> Santa Catarina</td>
+                <td class="num">7 610 361</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total inhabitants</th>
-                <td class="num"><strong> 106.620.449</strong> </td>
+                <th scope="row">Total inhabitants</th>
+                <td class="num"><strong> 151.088.688</strong> </td>
             </tr>
         </tfoot>
     </table>
