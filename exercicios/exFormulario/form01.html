@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My first form!!!</h1>
+    <form action="cadastro.php" method="post"> <!--autocomplete = off   tira a opção auto completar-->
+
+         <!--Todo imput deve ter um name(html/php), e para js o id é essencial-->
+        <p>
+            <label for="iemail">E-mail:</label>
+            <input type="text" name="sobrenome" id="iemail" required maxlength="15" autocomplete="email"> </p>
+        <p>
+            <label for="ipass">Password:</label>
+            <input type="password" name="nome" id="ipass" required minlength="8"></p>
+        <fieldset>
+            <legend>Sex</legend>
+             
+                
+                <input type="radio" name="sex" id="imasc">
+                <label for="imasc">Man</label>
+             
+                <input type="radio" name="sex" id="ifem" checked>
+                <label for="ifem">Woman</label>
+        </fieldset>
+        <p>
+            <input type="submit" value="Submit"></p>
+    </form>
+</body>
+
+</html>
