@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form  action="teste.php" method="post">
+        <p>
+            <label for="istate">State</label>
+            <select name="state" id="istate" required>
+                <option value=""> -- State --</option>
+                <option value="MG">MG</option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="RS">RS</option>
+                <option value="PR">PR</option>
+            </select>
+        </p>
+        <p><label for="iprof">Profession</label>
+            <input type="text" name="prof" id="iprof" list="plist" required>
+            <datalist id="plist">
+                <option>Doctor</option>
+                <option>Fireman</option>
+                <option>Teacher</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Submit">
+        </p>
+    </form>
+</body>
+
+</html>
