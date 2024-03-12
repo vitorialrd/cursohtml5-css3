@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+* {
+    margin: 1rem;
+    padding: 0;
+}
+
+* {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+}
+article {
+    width: 100%;
+}
+
+article::after {
+    content: 'LOREM IPSUM DOLOR SIT AMET';
+}
