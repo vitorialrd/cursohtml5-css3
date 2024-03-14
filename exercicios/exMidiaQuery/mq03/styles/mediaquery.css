@@ -1,7 +1,19 @@
+/*
+Typical device breakpoints:
+
+mobile:  480px
+tablet:  768px
+pc:      1024px
+tv:      1025px +
+
+*/
+
+
+
 
 /* TABLET */
 
-@media (max-width: 900px) and (min-width: 600px) {    
+@media (max-width: 1024px) and (min-width: 768px) {    
     html {
         height: 100vh;
     }
@@ -31,7 +43,7 @@
 
 /* PC */
 
-@media (max-width: 2000px) and (min-width: 900px) {    
+@media (max-width: 1200px) and (min-width: 1025px) {    
     html {
         height: 100vh;
     }
@@ -61,7 +73,7 @@
 
 /* TV */
 
-@media (max-width: 10000px) and (min-width: 2000px) {    
+@media (min-width: 1201px) {    
     html {
         height: 100vh;
     }
