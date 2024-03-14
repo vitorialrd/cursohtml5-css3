@@ -27,6 +27,7 @@ header {
 li {
     list-style-type: none;
     display: inline-block;
+    padding-bottom: 10px;
 
 }
 
@@ -66,20 +67,19 @@ p {
         align-items: center;
     }
 
-    #burguer {
-        display: block;
-        margin: auto;
-    }
-
-
     #link{
         display: none;
     }
 
 
     #burguer {
+        display: block;
+        margin: auto;
+    }
+
+    #burguer {
         color: #f7dac2;
-        padding: 10px;
+        padding: 8px;
         margin-bottom: 5px;
     }
     
