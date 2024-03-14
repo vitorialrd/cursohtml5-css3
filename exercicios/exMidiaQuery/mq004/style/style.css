@@ -11,26 +11,22 @@ header {
     text-align: center;
 }
 
+#link {
+    display: block;
+}
+
 #burguer {
-    color: #f7dac2;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-#burguer:hover{
-    background-color: #f7dac25e;
-    color: #520404f3;  
-    width: 90vw;
-    border-radius: 2px;
-    cursor: pointer; 
-}
-
-menu {
     display: none;
 }
 
+#linkMobile {
+    display: none;
+}
+
+
 li {
     list-style-type: none;
+    display: inline-block;
 
 }
 
@@ -64,3 +60,40 @@ p {
 }
 
 
+@media (max-width: 768px){
+
+    header {
+        align-items: center;
+    }
+
+    #burguer {
+        display: block;
+        margin: auto;
+    }
+    
+    #linkMobile {
+        display: block;
+    }
+
+    #link{
+        display: none;
+    }
+
+
+    #burguer {
+        color: #f7dac2;
+        padding: 10px;
+        margin-bottom: 5px;
+    }
+    
+    #burguer:hover{
+        background-color: #f7dac25e;
+        color: #520404f3;  
+        width: 50vw;
+        border-radius: 2px;
+        cursor: pointer; 
+    }
+
+
+
+}
