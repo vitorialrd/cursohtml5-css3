@@ -11,18 +11,28 @@ header {
     text-align: center;
 }
 
-#link {
-    display: block;
+menu {
+    display: none;
 }
 
 #burguer {
-    display: none;
+    display: block;
+    margin: auto;
 }
 
-#linkMobile {
-    display: none;
+#burguer {
+    color: #f7dac2;
+    padding: 8px;
+    margin-bottom: 5px;
 }
 
+#burguer:hover{ 
+    color: #fff;
+    text-shadow: 0px 1px 0px #00000091;
+    width: 50vw;
+    border-radius: 2px;
+    cursor: pointer; 
+}
 
 li {
     list-style-type: none;
@@ -61,36 +71,23 @@ p {
 }
 
 
-@media (max-width: 768px){
+@media screen and (min-width: 768px){
 
     header {
         align-items: center;
     }
 
-    #link{
-        display: none;
-    }
-
-
-    #burguer {
+    menu #link {
         display: block;
         margin: auto;
     }
 
     #burguer {
-        color: #f7dac2;
-        padding: 8px;
-        margin-bottom: 5px;
-    }
-    
-    #burguer:hover{
-        background-color: #f7dac25e;
-        color: #520404f3;  
-        width: 50vw;
-        border-radius: 2px;
-        cursor: pointer; 
+        display: none;
     }
 
-
+    main {
+        max-width: 800px;
+    }
 
 }

@@ -9,9 +9,10 @@
     <title>Media Query</title>
 </head>
 
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>NEW Time</h1>
+        <span onclick="clickmenu()" id="burguer" class="material-symbols-rounded">menu</span>
         <menu id="link">
             <ul>
                 <li><a href="#">Home</a></li>
@@ -20,15 +21,7 @@
                 <li><a href="#">Option</a></li>
             </ul>
         </menu>
-            <span onclick="clickmenu()" id="burguer" class="material-symbols-rounded">menu</span>
-            <menu id="linkMobile">       
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Option</a></li>
-                        <li><a href="#">Option</a></li>
-                    </ul>
-            </menu>
+            
     </header>
     <main>
         <article>
@@ -52,11 +45,22 @@
     </main>
 
     <script>
-        function clickmenu() {
-            if (linkMobile.style.display == "block") {
-                linkMobile.style.display = "none"}  
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 768){
+                link.style.display = 'block'
+            }
             else {
-                linkMobile.style.display = "block"
+                link.style.display = "none"
+            }
+        }
+
+        function clickmenu() {
+            if (link.style.display == "block") {
+                link.style.display = "none"
+            }  
+            else {
+                link.style.display = "block"
             }
         }
     </script>
