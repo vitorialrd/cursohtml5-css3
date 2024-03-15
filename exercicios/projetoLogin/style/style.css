@@ -101,11 +101,6 @@ main {
     margin-bottom: 15px;
   
 }
-.button:hover {
-    cursor: pointer;
-    color: #fff;
-    background-color: var(--green);
-}
 
 
 
@@ -136,6 +131,12 @@ main {
 
     #button{
         margin-top: 20px; 
+    }
+
+    .button:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: var(--green);
     }
 
 }
@@ -175,6 +176,12 @@ main {
 
     #button{
         margin-top: 20px; 
+    }
+
+    .button:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: var(--green);
     }
 }
 
