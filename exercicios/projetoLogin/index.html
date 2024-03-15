@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style/style.css">
     <title>People Login</title>
 </head>
@@ -14,16 +15,25 @@
             </div>
             <div class="form">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a)! </p>
-                <p>Faça login para acessar sua conta.</p>
-                <form action="login.php" method="post">
+                <div>
+                    <p>Seja bem-vindo(a)! </p>
+                    <p>Faça login para acessar sua conta.</p>
+                </div>
+                <form action="login.php" method="post" id="box">
                     <div class="campo">
-                        <label for="ilogin">Login</label>
-                        <input type="email" name="login" id="ilogin" placeholder="E-mail">
+                        <span class="material-symbols-outlined">person</span>
+                        <label for="ilogin"></label>
+                        <input type="email" name="login" id="ilogin" placeholder="E-mail" autocomplete="email">
                     </div>
                     <div class="campo">
-                        <label for="ipassword">Password</label>
-                        <input type="password" name="senha" id="ipassword" placeholder="Password">
+                        <span class="material-symbols-outlined">vpn_key</span>
+                        <label for="ipassword"></label>
+                        <input type="password" name="senha" id="ipassword" placeholder="Password" autocomplete="current-password">
+
+                        <div id="button">
+                            <input class="button" type="submit" value="Log In">
+                            <input class="button" type="submit" value="Help">
+                        </div>
                     </div>
                 </form>
             </div>
